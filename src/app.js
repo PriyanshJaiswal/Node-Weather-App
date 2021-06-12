@@ -4,6 +4,7 @@ const geocode=require('./utils/geocode')
 const forecast=require('./utils/forecast')
 
 const app=express()
+const port=process.env.PORT || 3000
 const hbs=require('hbs')
 // Define Paths for express Configuration
 const publicDirectoryPath=path.join(__dirname,'../public')
@@ -106,6 +107,6 @@ app.get('*',(req,res)=>{
 //     res.send('<h1>About</h1>')
 // })
 
-app.listen(3000,()=>{
-    console.log('Server is up on Port 3000')
+app.listen(port,()=>{
+    console.log('Server is up on Port '+port)
 })
