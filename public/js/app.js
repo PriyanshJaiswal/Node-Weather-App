@@ -1,4 +1,4 @@
-console.log('This a client server based Javascript File')
+// console.log('This a client server based Javascript File')
 
 // fetch('https://puzzle.mead.io/puzzle').then((response)=>{
 //     response.json().then((data)=>{
